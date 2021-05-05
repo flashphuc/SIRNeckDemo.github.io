@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.picture {
+  height: 504px;
+  position: relative;
+  width: 1269px;
+}
+
+.picture-link {
+  position: absolute;
+  /* top: 50%; */
+  left: 0;
+  z-index: 99;
+  width: 14.2857%;
+  height: 100%;
+  line-height: 50px;
+  /* margin-top: -25px; */
+  /* background: #00f; */
+  text-align: center;
+  color: transparent;
+  /* border-radius: 50%; */
+  font-size: 10px;
+  transition: 0.3s;
+}
+.picture-link:nth-of-type(4) {
+  margin-left: 0.2857%;
+}
+.picture-link:nth-of-type(2) {
+  margin-left: 14.2857%;
+}
+
+.picture-link:nth-of-type(3) {
+  margin-left: 28.5714%;
+}
+
+.picture-link:nth-of-type(1) {
+  margin-left: 42.8571%;
+}
+
+.picture-link:nth-of-type(5) {
+  margin-left: 57.1428%;
+}
+
+.picture-link:nth-of-type(6) {
+  margin-left: 71.4285%;
+}
+
+.picture-link:nth-of-type(7) {
+  margin-left: 85.7142%;
+}
+
+.picture-link:hover {
+  /* background: tomato; */
+}
+
+.picture-image-white-1 {
+  background-image: url(./img/white/4.PNG);
+}
+
+.picture-image-white-2 {
+  background-image: url(./img/white/2.PNG);
+}
+
+.picture-image-white-3 {
+  background-image: url(./img/white/3.PNG);
+}
+
+.picture-image-white-4 {
+  background-image: url(./img/white/1.PNG);
+}
+
+.picture-image-white-5 {
+  background-image: url(./img/white/5.PNG);
+}
+
+.picture-image-white-6 {
+  background-image: url(./img/white/6.PNG);
+}
+
+.picture-image-white-7 {
+  background-image: url(./img/white/7.PNG);
+}
+
+.picture-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #ccc;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.picture-image-white-1,
+.picture-link:nth-of-type(1):hover ~ .picture-image-white-1,
+.picture-link:nth-of-type(2):hover ~ .picture-image-white-2,
+.picture-link:nth-of-type(3):hover ~ .picture-image-white-3,
+.picture-link:nth-of-type(4):hover ~ .picture-image-white-4,
+.picture-link:nth-of-type(5):hover ~ .picture-image-white-5,
+.picture-link:nth-of-type(6):hover ~ .picture-image-white-6,
+.picture-link:nth-of-type(7):hover ~ .picture-image-white-7 {
+  opacity: 1;
+}
